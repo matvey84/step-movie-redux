@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+  width:100%;
+  height: 100vh;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.search-form-container{
+  width:100%;
+  height: 70px;
+  margin-top: 0px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control,
+.form-select {
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+.form-select{
+  margin: 0 50px 0 50px;
+}
+.nav-link{
+  margin: 0 10px 0 10px;
+}
+.btn{
+  width: 150px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 35px;
+}
+
+/* --------------------------------------------------favorite page */
+
+.fav-btn-decor{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height:30px;
+  margin-top:-4px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.favorite-page-container{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-result-list{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --------------------------------------------------------- search page */
+.search-page-container{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.search-result-list{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.hide{
+  visibility:hidden;
+}
+/* ---------------------------------------------------- detail page */
+.details-container{
+width: 95%;
+margin: 20px auto;
+
+}
+.total-info{
+  display:flex;
+  flex-direction: row;
+  justify-content:start;
+  align-items: center;
+  padding: 10px;
+}
+
+.tech-info{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-left:1px solid gray;
+  padding:15px;
+}
+.tech-info .info{
+  margin-bottom: 5px;
+}
+.description{
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: center;
+  padding: 30px;
+  border-top:1px solid gray ;
+}
+
+.poster{
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: center;
+  padding: 10px;
+  width:25rem;
+  max-height:85%;
+}
+.postert img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.favor{
+  width: 22.25rem;
+  height: 50px;
+  margin: 5px auto;
+}
+
+.list-group{
+  width: 100%;
+  margin-top: 5rem;
+
+
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: rgb(41, 34, 34); 
+  background-color:inherit; 
+  border-color:none;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration:underline;
+  background-color: #fff;
+  border: none;
+}
+
+/* -------------------------paginator */
+.hide-left,
+.hide-right{
+  visibility:hidden;
+}
+
+.paginator-wrapper{
+width:auto;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.paginator{
+  width: auto;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin: 15px;
+}
+
+.btn-page,
+.btn-arrow{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+.btn-page-text{
+font-size: 20px;
+}
+
+.btn-page:hover,
+.btn-arrow:hover{
+  transform: scale(1.15);
+}
+
+.btn-page:active{
+  background-color: rgb(156, 181, 226);
+}
+
+.nav-link-search{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link-search:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.link-text{
+  width:148px;
+  height: 48px;
+  margin-top: -7px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: -14px;
+  padding-top: 12px;
+  vertical-align: middle;
+  }
+
+.brand{
+  font-size: 1.2rem;
+}
+.navbar-brand:hover{
+  transform:scale(1.1);
+}
+.nav-item:hover{
+  transform:scale(1.1);
+  font-weight: 500;
+}
+.title-text{
+  margin: 10px auto;
+}
+.favorite-movie-title{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  align-content: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.alert{
+  display: flex;
+  justify-content: center;
+  font-size:24px
+}
+/* ----------------- ---------------------item movie */
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  width:22rem;
+  height:640px;
+   margin:25px 20px;  
+}
+
+.card-body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width:21.75rem;
+  height:90%;
+  padding: 5px;
+}
+
+.title-block{
+  position: relative;
+  top:0;
+  left:0;
+  text-align: center;
+  width:95%;
+  max-height:21%;	
+  margin-bottom: 5px;
+}
+
+.card-poster{
+  width:18rem;
+  min-height:78%;	
+  max-height:78%;	
+  margin: 5px 2.5px;
+}
+.card-title{
+text-align: center;
+}
+
+.card-poster img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.item-button-block{
+  max-height:19%;	
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-button-block .btn{
+  width: 288px;
+  height: 40px;	
+  margin:  auto;
+  margin-bottom: 5px;
+}
+
+.heart{
+  font-size: 24px;
+  color: red;
+  margin-left: 10px;
+}
+/* ------------------------------------- */
+/* .card-poster {
+  height: 70%;
+  background-size: cover;
+}  */
